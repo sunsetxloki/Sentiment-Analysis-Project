@@ -81,7 +81,10 @@ Follow these steps to set up the project locally:
 
 ## **Screenshots** 📸
 
-- Add screenshots of your Flask app interface for better visualization.
+- ![image](https://github.com/user-attachments/assets/3158d86d-d5db-4823-b62b-6d6817c9c183)
+ ![image](https://github.com/user-attachments/assets/e015e946-5dac-4663-b0ed-6b99fd24edaa)
+![image](https://github.com/user-attachments/assets/593a0995-400a-4a39-8b6d-68b210be031c)
+
 
 ---
 
