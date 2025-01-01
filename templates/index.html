@@ -1,0 +1,97 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Sentiment Analysis</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+        background-color: #343a40; /* Same as the header and banner background */
+        color: white;
+    }
+    body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .main-content {
+            flex-grow: 1;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo i {
+            font-size: 40px; /* Adjust as needed */
+            margin-right: 10px;
+        }
+
+        .logo h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+</style>
+</head>
+<body>
+
+<!-- Header Section -->
+<header class="bg-dark text-white py-4">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="logo">
+                <i class="fas fa-film"></i>
+                <h1>Movie Sentiment</h1>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Banner Section -->
+<section class="banner bg-dark text-white text-center py-5">
+    <div class="container">
+        <h2 class="display-4">Analyze Movie Reviews</h2>
+        <p class="lead">Get an instant sentiment analysis of your favorite movie reviews.</p>
+    </div>
+</section>
+
+<!-- Review Form Section -->
+<section class="review-form py-5">
+    <div class="container">
+        <div class="card shadow-lg">
+            <div class="card-body">
+                <form action="/predict" method="POST">
+                    <div class="form-group">
+                        <textarea name="review" rows="5" class="form-control" placeholder="Enter your movie review"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-warning w-100">Analyze Sentiment</button>
+                </form>                
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="bg-dark text-white py-3">
+    <div class="container text-center">
+        <p>&copy; 2024 MovieSentiment. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,154 @@
+/* Global Styles */
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif; /* Default font */
+}
+
+/* Header Styles */
+header {
+    background-color: #343a40; /* Dark background */
+    color: white;
+    padding: 10px 0; /* Adjust padding for header */
+    width: 100%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Header shadow */
+}
+
+/* Logo Styles */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo i {
+    font-size: 40px; /* Adjust size of the icon */
+    margin-right: 10px; /* Spacing between icon and text */
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 2rem; /* Font size for logo text */
+}
+
+/* Banner Styles */
+.banner {
+    background-color: #343a40; /* Same as header */
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.banner h2 {
+    font-size: 2.5rem; /* Headline size */
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: 1.2rem; /* Description text size */
+}
+
+/* Footer Styles */
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #343a40; /* Footer background color */
+    color: white;
+    font-size: 0.9rem;
+}
+
+/* Main Content */
+.main-content {
+    flex-grow: 1;
+}
+
+/* Form Section Styles */
+.review-form {
+    padding: 40px 20px;
+}
+
+.card {
+    border-radius: 10px; /* Smooth corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.card-body {
+    padding: 20px;
+}
+
+textarea {
+    resize: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+textarea:focus {
+    border-color: #ffc107; /* Focus color (Bootstrap warning color) */
+    box-shadow: 0px 0px 5px rgba(255, 193, 7, 0.5);
+}
+
+/* Button Styles */
+button, a.btn {
+    width: 100%; /* Full-width buttons */
+    font-size: 1.2rem; /* Adjust button font size */
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #e0a800; /* Darker warning shade */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Result Section */
+.result-container {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.result-text {
+    font-size: 1.8rem;
+    font-weight: bold;
+    background: linear-gradient(45deg, #d3d3d3, #808080); /* Light grey to dark grey */
+    -webkit-background-clip: text; /* Clip the background to the text */
+    color: transparent; /* Make text transparent so the gradient is visible */
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3), 0px 0px 10px rgba(255, 255, 255, 0.7); /* Intense shadow effect */
+    margin-top: 18px;
+    font-family: Roboto,Helvetica,Arial, sans-serif; /* Modern, smooth font */
+    text-transform: capitalize; /* Stylish text transformation */
+    letter-spacing: 1px; /* Add space between letters */
+    transition: transform 0.3s ease-in-out, color 0.3s ease;
+    margin-left: 20px;
+}
+
+.result-text:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    color: #fff; /* Brighten text on hover */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .logo h1 {
+        font-size: 1.5rem; /* Smaller logo text for mobile */
+    }
+
+    .banner h2 {
+        font-size: 2rem; /* Smaller banner headline */
+    }
+
+    .banner p {
+        font-size: 1rem; /* Smaller banner description */
+    }
+
+    button, a.btn {
+        font-size: 1rem; /* Adjust button size for mobile */
+    }
+}
