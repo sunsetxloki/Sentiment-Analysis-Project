@@ -9,6 +9,9 @@
         "src": "static/**/*",
         "use": "@vercel/static"
       }
-    ]
+    ],
+    "env": {
+      "PYTHON_VERSION": "3.12"
+    }
   }
   
